@@ -15,6 +15,20 @@ class LabClass05 extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
+              DrawerHeader(
+                child:Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.home,size: 50,color: const Color.fromARGB(219, 6, 49, 243),
+                    ),
+                    TextButton(
+                      onPressed:(){}, 
+                    child:Icon(Icons.close,size: 30,color: const Color.fromARGB(255, 243, 6, 6)),
+                    ),
+                  ],
+                ) ,
+              ),
               ListTile(
                 leading: Icon(Icons.image),
                 title: Text("Image"),
@@ -23,6 +37,16 @@ class LabClass05 extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.settings),
                 title: Text("Settings"),
+                onTap: (){},
+              ),
+              ListTile(
+                leading: Icon(Icons.place),
+                title: Text("Address"),
+                onTap: (){},
+              ),
+              ListTile(
+                leading: Icon(Icons.phone),
+                title: Text("Contact Number"),
                 onTap: (){},
               ),
             ],
