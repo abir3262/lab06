@@ -12,45 +12,18 @@ class LabClass05 extends StatelessWidget {
     return MaterialApp(
       title: 'Basic Flutter UI-02',
       home: Scaffold(
-        drawer: Drawer(
-          child: ListView(
-            children: [
-              DrawerHeader(
-                child:Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      Icons.home,size: 50,color: const Color.fromARGB(219, 6, 49, 243),
-                    ),
-                    TextButton(
-                      onPressed:(){}, 
-                    child:Icon(Icons.close,size: 30,color: const Color.fromARGB(255, 243, 6, 6)),
-                    ),
-                  ],
-                ) ,
+        bottomNavigationBar: BottomNavigationBar(
+          items:[
+            BottomNavigationBarItem(
+              icon:Icon(Icons.home),label: "Home" ,
               ),
-              ListTile(
-                leading: Icon(Icons.image),
-                title: Text("Image"),
-                onTap: (){},
+            BottomNavigationBarItem(
+              icon:Icon(Icons.settings),label: "Settings", 
+            ),
+            BottomNavigationBarItem(
+              icon:Icon(Icons.error),label: "Error" ,
               ),
-              ListTile(
-                leading: Icon(Icons.settings),
-                title: Text("Settings"),
-                onTap: (){},
-              ),
-              ListTile(
-                leading: Icon(Icons.place),
-                title: Text("Address"),
-                onTap: (){},
-              ),
-              ListTile(
-                leading: Icon(Icons.phone),
-                title: Text("Contact Number"),
-                onTap: (){},
-              ),
-            ],
-          ),
+          ],
         ),
         appBar: AppBar(
           title: Text("Basic Flutter UI-02"),
