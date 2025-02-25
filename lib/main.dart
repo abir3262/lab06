@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,11 +20,12 @@ class LabClass05 extends StatelessWidget {
         ),
         body: Row(
           children: [
+            CachedNetworkImage(
+              imageUrl: "https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+            
+            
             Image.network(
-              "https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg"
-            ), 
-            Image.network(
-              "https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg"
+              "https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             ),
           ],
         ),
