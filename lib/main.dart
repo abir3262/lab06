@@ -54,7 +54,7 @@ class SimpleNikeApp extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  '\$15,000',
+                  '\$15,0000',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
@@ -63,7 +63,7 @@ class SimpleNikeApp extends StatelessWidget {
                   ),
                 ),
                 const Text(
-                  '\$7,500 Only!',
+                  '\$7,5000 Only!',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
